@@ -1,38 +1,23 @@
-import java.util.InputMismatchException;
-import java.util.Locale;
-import java.util.Scanner;
+
 
 public class AboutMe {
     public static void main(String[] args) throws Exception {
         
-        Scanner sc = new Scanner(System.in).useLocale(Locale.US);
+        int numero = 1;
 
-        try {
-        System.out.println("-=-=-=-=-=-=-=-=-=-=-=-==-=-==-=-=-==-=-=-==-=-");
 
-        System.out.println("Digite seu nome");
-        String nome = sc.nextLine();
-        
-        System.out.println("Digite seu sobrenome");
-        String sobrenome = sc.nextLine();
 
-        System.out.println("Digite sua idade");
-        int idade = sc.nextInt();
+        for (int x=1; x<2; x++){
 
-        System.out.println("Digite sua altura");
-        double altura = sc.nextDouble();
+            numero = numero + x;
 
-        System.out.println("-=-=-=-=-=-=-=-=-=-=-=-==-=-==-=-=-==-=-=-==-=-");
-
-        System.out.println(nome);
-        System.out.println(sobrenome);
-        System.out.println(idade);
-        System.out.println(altura);
         }
-        catch (InputMismatchException e){
-            System.err.println("Os campos idade e altura precisam ser númericos!");
-        }
-        
-        
-    }
+
+        System.out.println("O valor de número é: " + numero);
+
+
+
+
+}
+
 }
